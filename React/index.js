@@ -1,8 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+// import { Login } from './pages/LoginPage.js';
+import { HomePage } from './pages/HomePage.js';
 
 const App = () => {
-    return <h1>This is my first App!</h1>;
+    // return <h1>This is my first App!</h1>;
+    // return <Login></Login>
+    return <HomePage></HomePage>
 }
 
-ReactDOM.render(<App></App>, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<App />);

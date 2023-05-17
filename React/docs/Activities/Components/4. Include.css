@@ -1,0 +1,22 @@
+Add a css file using
+
+ npm install --save-dev copy-webpack-plugin
+ npm install --save-dev dotenv-webpack
+
+
+ Add 
+ 
+ const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+
+ module.exports = {
+    // Your existing webpack configuration...
+    plugins: [
+      // Other plugins...
+      new CopyWebpackPlugin({
+        patterns: [
+          { from: 'public', to: '' },
+        ],
+      }),
+    ],
+  };
